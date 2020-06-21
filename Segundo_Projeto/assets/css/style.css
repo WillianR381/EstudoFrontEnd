@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.navigation-content{
+	position: relative;
+	background-color: #081a24;
+	padding: 5px 0;
+}
+
+
+.navigation-content img{
+	position: relative;
+	left: 10%;
+}
+
+.navigation-content ol{
+	position: absolute;
+	right: 50px;
+	top: 15px;
+}
+
+.navigation-content li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.navigation-content a{
+	text-decoration: none;
+	color: #355466;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 5px;
+	transition: 1s;
+}
+
+.navigation-content a:hover{
+	color: white;
+}
+
+header .background-img{
+	width: 100%;
+	height: 50vh;
+}
+main .main-content{
+	margin: 0 auto;
+	max-width: 960px;
+	margin-top: 25px;
+}
+
+main .text-content {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.text-content h1{
+	
+	color: #202020 ;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.text-content p{
+	margin-top: 20px;
+	color: #555452;
+	line-height: 2;
+}
+
+
+
+
+section .card-content{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-content div{
+	text-align: center;
+}
+
+.card-content div .line-cloth{
+	font-weight: bold;
+	margin: 10px 0;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.card-content div .attribute-cloth{
+	color: #9a9c99;
+}
+
+
+
+section .sub-content{
+	margin-top: 80px;
+	position: relative;
+	
+}
+
+.sub-content img {
+	width:100% ;
+	height: 60vh;
+}
+
+.sub-content .text-sub-content{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	color: white;
+	width: 700px;
+}
+
+.text-sub-content h2{
+	font-weight: bold;
+	font-size: 44px;
+	text-transform: uppercase;
+}
+
+.text-sub-content p{
+	margin-top: 35px;
+	width: 450px;
+}
+
+section .comunication{
+	margin: 50px 0 60px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: #003d52;
+}
+
+footer{
+	margin: 30px 0;
+	text-align: center;
+	padding: 20px 0;
+	background-color: #001018;
+	color: #355466;
+}
