@@ -1,0 +1,88 @@
+.padrao {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+
+    /*Adicionar uma fonte do google*/
+    font-family: 'Piedra', cursive;
+
+}
+
+
+h1{
+    background-color: orangered;
+    border-radius: 40px 30px 20px 10px;      /*Arredondar*/
+}
+
+
+.p1{
+    /*Valores antes da barra corresponde horizontal,
+    dps da barra na vertical . x / y */
+    border-radius: 40px 30px 20px 10px/ 20px 20px 230px 100px;   
+    font-weight: bold;
+    
+    background-color: orange;
+}
+
+.p2{
+    /*Cria uma sombra no bloco:
+    Eixo X, eixo Y, esfumaçamento e a cor desejada*/
+    box-shadow: 10px -10px 20px #000000;
+    
+    background-color: olivedrab;
+}
+
+
+.p3  {
+    /*Se quiser aumentar ou diminuir a sombra 
+    colar o valor no final*/
+    box-shadow: 10px -10px 20px 10px #000000;
+    
+    background-color: cadetblue;
+}
+
+.p4{
+    /*Cria uma sombra projetada no texto:
+    Eixo X, eixo Y, esfumaçamento e a cor desejada*/
+    text-shadow: 10px 10px 0 #aaaaaa ;
+    
+    background-color: gainsboro;
+}
+
+.p5 {
+
+    /*Faz um degradê das cores selecionadas, podendo escolher 
+    a direção ou as direções, se necessario podendo adicionar 
+    imagens*/
+    background-image: linear-gradient(to right top, red,blue);
+
+    /*background-image: linear-gradient(70deg, red,blue);*/
+}
+
+
+.p6{
+    background-color: gold;
+/*Algum evento que dispare a trasinção*/
+  
+    /*Qual é a propriedade que vai 
+    ser animar*/
+    transition-property: width,height;
+
+    /*Qual será a duração para resul-
+    tado final da animação*/
+    transition-duration: 1s,3s;
+
+    /*Se animação irá acelarar, ser
+    linear, desacelera  etc...*/
+    transition-timing-function: cubic-bezier(.67,-.38,.5,1.5);
+
+    /*Atrasa o inicio da animação*/
+    transition-delay: .5s,1.5s;
+}
+
+.p6:hover{
+    width: 400px;
+    height: 400px;
+    background-color: goldenrod;
+}
