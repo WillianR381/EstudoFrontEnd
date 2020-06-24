@@ -1,0 +1,62 @@
+.flexbox{
+    height: 250px;
+    border: 1px solid red;
+    display: flex;
+
+    /*Se os elementos vão se comportar em linha ou em 
+    coluna*/
+    flex-direction: row;
+
+    /*Se o elemento não couber mais na pagina 
+    ele quebra linha nesse elemento*/
+    flex-wrap: wrap;
+
+    /*Atalho*/
+    flex-flow: row wrap;
+
+    /*Alinha os elementos na horizontal*/
+    justify-content: center;
+
+    /*Alinha os elementos na vertical*/
+    align-items: flex-start;
+
+    /*Usado junto com wrap ele age quando há uma quebra
+    de linha assim alinhando esses grupo de elementos 
+    na vertical*/
+    align-content: center;
+}
+
+.flexbox div{
+ 
+    background-color: orange;
+    width: 300px;
+    margin: 15px;
+}
+
+
+.flexbox div:nth-child(2){
+    /*Essa propriedade faz ocupar todo espaço sobrando,com isso o elemento 
+    cresce    */
+    flex-grow: 1;
+
+    /*Neste contexto é a mesma coisa que width*/
+    flex-basis: 300px;
+
+    /*Faz que o esse elemento vai diminuir mais que os outros*/
+     flex-shrink: 2;
+    
+    /*(Atalho) grow shrink basis*/
+    flex: 1 0 100px;
+}
+.flexbox div:nth-child(3){
+   
+    /*Muda a ordem dos elementos, padrão é 0, se desejar mudar,
+    a ordem apenas nele ele ficará no final pois os outros elemen-
+    tos não receberam o order*/
+    order: 1;
+   
+
+    /*Alinha cada filho individualmente na horizontal*/
+    align-self: flex-end;
+}
+
