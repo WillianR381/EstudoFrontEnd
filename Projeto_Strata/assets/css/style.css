@@ -7,30 +7,71 @@
 	vertical-align: baseline;
 }
 
-header{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 35vw;
-    height: 100vh;
-    position: fixed;
-    text-align: end;
-    background-image: linear-gradient(to bottom right ,transparent,rgba(0,0,0,.6)),url(../img/bg.jpg);
+body .container{
+    display: flex;
+}
+
+header {
+	background-image: linear-gradient(to bottom right ,transparent,rgba(0,0,0,.9)),url(../img/bg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.95;
-    padding-right:50px;
+	background-repeat: no-repeat;
+    height: 100vh;
+	width: 60%;
+	box-sizing: border-box;
+	opacity: 0.85;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding: 80px 50px 0 0 ;
+	text-align: end;
+	color: #aaaaaa;
 }
 
 
-.main-content img{
-    margin-top: 20%;
-    border-radius: 50%;
+
+.main-content img {
+	border-radius: 50%;
+	margin-bottom: 20px;
 }
 
-.main-content h1{
-    font-size: 1.3em;
-    width: 280px;
-    color: #cccccc;
+.main-content h1,span,p {
+	margin-top: 20px;
+}
+
+.main-content h1 {
+	font-size: 24px;
+	max-width: 16vw;
+	line-height: 1.8;
+}
+
+.main-content h1 span {
+	color: #ffffff;
 }
 
 
+
+.social-networks img{
+	width: 40px;
+	margin-left:20px ;
+}
+
+.social-networks img:hover{
+	fill: red;
+}
+
+header p{
+	color: #777777;
+}
+
+header p a {
+   text-decoration: none;
+   color: #777777;
+   border-bottom: 1px dotted #777777;
+   transition: 1s;
+}
+
+p a:hover{
+   color: rgb(11, 247, 90);
+   border: none;
+}
