@@ -1,77 +1,334 @@
-*{
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #666666;
+    line-height: 2;         /*Espaçamento vertical dos textos*/
+}
+
+a{
+    transition: color .2s linear,border .2s linear;
+    text-decoration: none;
+    border-bottom:1px dotted  ;
+    color: #49bf9d;
+}
+
+a:hover{
+    border-bottom-color:transparent ;
+}
+
+p{
+    margin: 0 0 2em;
+    color: #929292;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em  0;    /*Distancia conforme o tamanho da fonte do h presente*/
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 15px;
+}
+
+sub,sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+}
+
+code{
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: .25em .65em ;
+    font-family: 'Courier New', Courier, monospace;
+    color: #929292;
+}
+
+pre code {
+    display: block;
+}
+
+ul, ol {
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    padding: 0;
+    list-style-position: inside;
+    padding-left: 1.1em;
 }
 
-body .container{
+li{
+    padding-left: .5em;
+}
+
+input,label,textarea{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+ 
+}
+
+input,textarea ,select{
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+input:focus,textarea:focus{
+    border: 3px solid  #49bf9d;
+    outline: none;  /*Tira o padrão do browser*/
+}
+
+textarea {
+    height: 10em;
+}
+
+/*Seleção por atributo*/
+input[type="radio"],input[type="checkbox"]{
+    background: red;
+}
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+    background-image: url(../images/overlay.png),url(../images/bg.jpg);
+    background-position: left top;
+    background-size: auto,cover;
+    text-align: right;
+}
+
+.main-header-title{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: rgba(255,255,255,0.5);
+}
+
+.main-header-title strong {
+    color: white;
+    font-weight: normal;
+}
+
+.main-header-link{
+    color:inherit ;
+}
+
+.main-header-link:hover{
+    color: #49bf9d;
+}
+
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+}
+
+
+.ul-alternate {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ul-alternate li {
+    border-bottom: 2px solid #d8d8d8;
+    padding-left: 0;
+}
+
+.ul-alternate li:last-child{
+    border:0;
+}
+
+.ul-icons{
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul-icons li{
+    display: inline-block;
+    font-size: 2em;
+    color: #49bf9d;
+}
+
+
+.row{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-header {
-	background-image: linear-gradient(to bottom right ,transparent,rgba(0,0,0,.9)),url(../img/bg.jpg);
-    background-size: cover;
-	background-repeat: no-repeat;
-    height: 100vh;
-	width: 60%;
-	box-sizing: border-box;
-	opacity: 0.85;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: space-around;
-	padding: 80px 50px 0 0 ;
-	text-align: end;
-	color: #aaaaaa;
+.col2{
+    width: 50%;   
+}
+
+.button-default{
+    background-color: #49bf9d;
+    border: 2px solid #49bf9d;
+    color: #ffffff;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    width: auto;
+}
+
+.button-default-stroke{
+    background-color: #fff;
+    border-color:#efefef ;
+    color: inherit;
+}
+
+.button-default-small{
+    font-size: .6em;
+}
+
+.button-default-full{
+    display: flex;
+   align-items: center;
+    flex-direction: column; 
+}
+
+.button-default-big{
+    font-size: 1em;
+}
+
+.imagem-link{
+    border: 0;
+}
+
+.table{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;  /*Mescla o background*/
+    text-align: left;
+}
+
+.table td {
+    padding: .75em;
+}
+
+.table th{
+    background: #ccc;
+    padding: .75em;
+}
+
+.table tbody tr td{
+    border-bottom: 1px solid #cccccc;
 }
 
 
-
-.main-content img {
-	border-radius: 50%;
-	margin-bottom: 20px;
+.table tbody tr:first-child td{
+    border-top: 2px solid #666666;
 }
 
-.main-content h1,span,p {
-	margin-top: 20px;
+.table tbody tr:last-child td{
+    border-bottom: 2px solid #666666;
 }
 
-.main-content h1 {
-	font-size: 24px;
-	max-width: 16vw;
-	line-height: 1.8;
+/*odd são numeros impares , even para numeros pares*/
+.table tbody tr:nth-child(even) td{
+    background: #dddddd;
 }
 
-.main-content h1 span {
-	color: #ffffff;
+.table-alternate tbody td,.table-alternate tbody tr:first-child td,.table-alternate tbody tr:last-child td {
+    border: 1px solid #dddddd;
+}
+
+.get-in-touch-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.get-in-touch-content form{
+    width: 66%;
+    margin-right:3% ;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch-content-principal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.get-in-touch-content-principal div {
+    width: 49%;
+}
+
+.get-in-touch-content input {
+    margin: 20px 0;
 }
 
 
-
-.social-networks img{
-	width: 40px;
-	margin-left:20px ;
+.get-in-touch-content address {
+    width: 30%;
 }
 
-.social-networks img:hover{
-	fill: red;
+
+.recent-work{
+    display: flex;
+   justify-content: space-around;
 }
 
-header p{
-	color: #777777;
+.main-header-link img {
+    border-radius: 50%;
 }
 
-header p a {
-   text-decoration: none;
-   color: #777777;
-   border-bottom: 1px dotted #777777;
-   transition: 1s;
+.recent-work-card img{
+    border-radius: 10px;
 }
 
-p a:hover{
-   color: rgb(11, 247, 90);
-   border: none;
+
+.gallery-img img{
+   width: 100%;
+   background-size: cover;
 }
+
+
+.gallery-thumb{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}    
+
+.gallery-thumb-itens img{
+    width: 32%;
+    
+}
+
+.gallery-thumb-itens img:nth-child(2){
+    margin: 0 1.5%;
+}
+
+
