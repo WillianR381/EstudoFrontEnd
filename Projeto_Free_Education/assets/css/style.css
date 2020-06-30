@@ -290,7 +290,7 @@ main .our-faculty-cards{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 70%;
+    width: 50%;
     height: 100%;
     margin: 20px auto;
 }
@@ -302,6 +302,10 @@ main .our-faculty-cards{
     border-radius: 2px;
     margin: 10px;
     padding-left: 5px;
+}
+
+.form-content textarea{
+    height: 200px;
 }
 
 .form-content button {
@@ -323,6 +327,7 @@ footer .information{
 
 
 .information h3{
+    text-align: start;
     font-weight: bold;
     font-size: 32px;
     margin: 30px 0;
