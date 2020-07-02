@@ -1,0 +1,51 @@
+
+/* Descedencia:Seleciona todas as tag do html a que tem 
+como descendente o article */
+article a {
+    color: red;
+}
+
+/* Filho direto:Seleciona todos os b que tem como pai 
+p */
+article p > b{
+    color: green;
+}
+
+/* Irmão adjacente: Seleciona o proximo irmão imediato
+,selecionando o primeiro p que vem apos o h3 */
+article h3 + p{
+    color: greenyellow;
+}
+
+
+/*Proximos Irmãos:Seleciona todos os p que tem como irmão
+o h3 */
+article h3 ~ p {
+    color: blue;
+}
+
+/* ------------------------------------------------------
+Seletores de Atributo 
+--------------------------------------------------------*/
+/*Seleciona todos os a, que tem o atributo title nele*/
+a[title]{
+    color: brown;
+}
+
+/*Seleciona todas img que tenha o valor equivalente*/
+img[alt="oi"]{
+    color: burlywood;
+}
+
+/* Seleciona todos a onde o inicio começa com valor deter-
+minado */
+a[href="http"]{
+    color: cadetblue;
+}
+
+/*Seleciona todos a onde o final tenha o valor deter-
+minado */
+img[src$=".png"]{
+    color: chartreuse;
+}
+
