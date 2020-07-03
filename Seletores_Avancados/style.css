@@ -53,5 +53,5 @@ img[src$=".png"]{
 /*nth-child escolho qual filho eu vou escolher, com isso
 so vou aplicar o estilo no primeiro article*/
 article:nth-child(1) a{
-    background-color: cyan;
+    background-color: cyan; 
 }

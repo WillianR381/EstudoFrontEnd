@@ -1,0 +1,42 @@
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+/* Se for selecionado, confirmar o check box */
+input[type="checkbox"]:checked {
+    width: 25px;
+    height: 25px;
+}
+
+/*Se o botão estiver desabilitado, ou seja se estivar o atributo disabled*/
+button:disabled{
+    background-color: blue;
+}
+
+
+p{
+    color:red;
+}
+
+/*Para seja vazio (EMPTY), no caso <p></p>*/
+p:empty::before{
+    content: "Paragrafo vazio   ";
+}
+
+
+/* Quando clicar com mouse, link tbm pode receber focus */
+input[type="text"]:focus{
+    background-color: #dddddd;
+}
+
+/*Quando passar com o mouse em cima*/
+a:hover{
+    background-color: blue;
+}
+
+
+input::placeholder{
+    color: blue;
+}

@@ -1,0 +1,20 @@
+
+/*Before:Quando quiser adicionar uma formatação especifica
+em uma área antes do elemento  */
+
+p::before{
+    content: "No inicio";
+    color: yellow;
+}
+/* Geralmente utilizado para marcadores de textos */
+
+
+
+/* After:Assim como o before, só que após o elemento
+ou seja a direita */
+p::after{
+    content: "No Final";
+    color: red;
+}
+
+/*Comportamento padrão é INLINE*/
