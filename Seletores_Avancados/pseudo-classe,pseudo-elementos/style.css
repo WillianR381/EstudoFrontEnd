@@ -1,4 +1,6 @@
-
+/* ------------------------------------------------- */
+/*Pseudo classes*/
+/* ------------------------------------------------- */
 input[type="checkbox"]{
     width: 20px;
     height: 20px;
@@ -31,12 +33,61 @@ input[type="text"]:focus{
     background-color: #dddddd;
 }
 
+/*O Elemento que tem o atributo read-only*/
+input[type="text"]:read-only{
+    background-color: #ccc;
+}
+
 /*Quando passar com o mouse em cima*/
 a:hover{
     background-color: blue;
 }
 
-
+/* Formata o placeholder */
 input::placeholder{
     color: blue;
+}
+
+
+/*Apenas o 1 paragrafo*/
+div p:nth-child(1){
+    color: red;
+}
+
+/*Pegar o 3 filho de tipo p*/
+/*Onde só funciona para tags*/
+div p:nth-of-type(3){
+    color: blue;
+}
+
+/*Pega o primeiro filho*/
+div:first-child{
+    color: orange;
+}
+
+/*Pega o ultimo filho*/
+div p:last-child{
+    color: blueviolet;
+}
+
+/* ------------------------------------------------- */
+/*Pseudo elementos*/
+/* ------------------------------------------------- */
+
+
+/*Primeira letra*/
+.pseudo-elementos p::first-letter{
+    font-size: 3em;
+    color: yellowgreen;
+}
+
+/* Primeira linha  */
+.pseudo-elementos p::first-line{
+    color: aquamarine;
+    font-size: 2em;
+}
+
+/* Ao selecionar o conteudo */
+.pseudo-elementos p::selection{
+    background-color: yellow;
 }
