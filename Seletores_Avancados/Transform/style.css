@@ -1,0 +1,64 @@
+div{
+    width: 150px;
+    height: 150px;
+}
+
+
+.div1{
+    background-color: red;
+
+    /*Move no eixo x e y*/
+
+    /* Age como position relative, porem ao uso de porcentagem relativo a
+    sua propria altura, ao contrario do position relative
+    que pega como refencia o elemento pai */
+    transform: translate(50px, 50px) ;
+}
+
+.div2{
+    background-color: blue;
+
+    /*Recebe valores em graus ele gira o elemento, como base o centro do
+    elemento */
+    transform: rotate(45deg);
+}
+
+
+.div3{
+    background-color: yellow;
+    
+    transform: rotate(-90deg);
+
+    /*Muda  o ponto de referencia para girar o elemento*/
+    transform-origin:left top ;
+}
+
+.div4{
+    width: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.div4 .div4-interno{
+    /* O eixo  x  e y é com base na posição do elemento, não normal */
+
+    /*Onde a ordem do translate e rotate importa*/
+    background-color: yellow;
+    transform: rotate(30deg) translate(50%);
+
+}
+
+.div5 {
+    background-color: orange;
+
+    /*Distorce nos eixos elemento,recebe valores em graus */
+    transform: skew(30deg);
+}
+
+
+.div6{
+    
+    /*Muda a proporção do elemento,sendo o valor em numeros, 
+    1 como padrão*/
+    transform: scale(1.5, 1.5);
+}
