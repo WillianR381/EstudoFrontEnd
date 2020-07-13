@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <picture>
+        <source 
+          media="(min-width: 680px)"
+          srcset="images/img-big.png">
+        <source 
+          media="(min-width: 465px)"
+          srcset="images/img-med.png">
+        
+        <!-- Fall Back(caso não tenha suporte à itens acima) -->
+        <img 
+          src="images/img.png" 
+          alt="decription alternative">
+      </picture>
 </body>
 </html>
